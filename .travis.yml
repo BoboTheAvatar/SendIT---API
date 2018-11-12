@@ -11,7 +11,6 @@ install:
   - npm install -g jasmine
   - npm install -g jasmine-node
   - npm install -g jasmine-console-reporter
-  - npm install -g jasmine-superset
   - npm install -g superset
   - npm install -g codecov
   - npm install -g babel-register
@@ -23,7 +22,7 @@ before_script:
 
 script:
   - "npm start &"
-  - "npm test"
+  - "npm test-cover"
   
 after_success:
     - codecov
