@@ -7,7 +7,7 @@ const app=express();
 
 app.use('/api/v1', rootin());
 
-
+console.log("Entering Index:");
 
 const server=app.listen(8080, () => {
           let host=server.address().address;
