@@ -5,7 +5,7 @@ node_js:
   - node
 
 install:
-  - npm install -g codevov
+  - npm install -g codecov
 
 before_script: 
   - chmod 0777 ./node_modules/.bin/istanbul
