@@ -4,7 +4,11 @@ node_js:
   - 9
   - node
 
-install: true
+install:
+  - npm install -g codevov
+
+before_script: 
+  - chmod 0777 ./node_modules/.bin/istanbul
 
 script:
   - "npm start &"
