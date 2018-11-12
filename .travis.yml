@@ -1,0 +1,29 @@
+language: node_js
+
+node_js: 
+  - 9
+  - node
+
+install:
+  - npm install
+  - npm install -g express
+  - npm install -g @babel/core @babel/cli @babel/node
+  - npm install -g jasmine
+  - npm install -g jasmine-node
+  - npm install -g jasmine-console-reporter
+  - npm install -g jasmine-superset
+  - npm install -g superset
+  - npm install -g codecov
+  - npm install -g babel-register
+  - npm install -g coveralls
+  - npm install -g istanbul
+
+before_script: 
+  - chmod 0777 ./node_modules/.bin/mocha
+
+script:
+  - "npm start &"
+  - "npm test"
+  
+after_success:
+    - codecov
