@@ -4,7 +4,7 @@
   "description": "API SENDIT",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "babel-node index.js",
     "test": "jasmine",
     "test1": "./node_modules/.bin/mocha --reporter spec ",
     "test-cover": "./node_modules/.bin/istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage -- --require babel-register"
