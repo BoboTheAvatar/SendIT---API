@@ -10,6 +10,7 @@ install:
 before_script: 
   - chmod 0777 ./node_modules/.bin/istanbul
   - chmod 0777 ./node_modules/.bin/babel-node
+  - chmod 0777 ./node_modules/.bin/mocha
 
 script:
   - "npm start &"
