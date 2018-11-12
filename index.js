@@ -1,6 +1,6 @@
 import express from 'express';
 //const express = require("express");
-import {rootin} from './API/index.js';
+import {rootin} from './api/index.js';
 
 const app=express();
 
