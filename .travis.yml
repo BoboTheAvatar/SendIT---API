@@ -4,8 +4,7 @@ node_js:
   - 9
   - node
 
-install:
-  - npm install -g codecov
+install:true
 
 before_script: 
   - chmod 0777 ./node_modules/.bin/istanbul
@@ -16,5 +15,3 @@ script:
   - "npm start &"
   - "npm run test1"
   
-after_success:
-    - codecov
