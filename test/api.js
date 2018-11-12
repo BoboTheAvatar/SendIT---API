@@ -38,7 +38,7 @@ describe("API End-point Testing", function() {
              "Destination": "Kn13",
              "Location":"Kn14",
              "Price": "12",
-             "Status":"In Progress"
+             "Status":"Cancelled"
            }
         }
     };
@@ -90,7 +90,7 @@ describe("API End-point Testing", function() {
              "Destination": "Kn13",
              "Location":"Kn14",
              "Price": "12",
-             "Status":"In Progress"
+             "Status":"Cancelled"
            }
     },
 
